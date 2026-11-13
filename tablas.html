@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas de multiplicar</title>
+</head>
+<body>
+    <nav class="navbar bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/WIN_20260731_15_57_18_Pro.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        PRACTICAS JAVASCRIPT
+      </a>
+    </div>
+</nav>
+
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <h3>TABLAS DE MULTIPLICAR jajajsjasja</h3>
+
+                    <p>Selecciona una tabla:</p>
+
+                    <input type="range" id="numero"
+                    min="1" max="10" value="1"
+                    oninput="calcular()">
+
+                    <p id="vn">1</p>
+
+                    <button onclick="resetear()">RESETEAR</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>RESULTADO</h3>
+                    <div id="tabla">                     
+                        1 x 1 = 1
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <script src="tablas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boostrap/bootstrap.min.css">
+    <title>PRACTICAS JAVASCRIPT</title>
+</head>
+<body class="h-100 m-0 p-0">
+    <nav class="navbar bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/WIN_20260731_15_57_18_Pro.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        PRACTICAS JAVASCRIPT
+      </a>
+    </div>
+</nav>
+
+    <div class="container-fluid min-vh-100 p-4 card border-0 rounded-0 d-flex justify-content-center" style="background-color: #6f42c1; color: white;">
+        <h1 class="text-center">CALCULADORA DE IMC</h1> 
+        <hr style="border-color: white;">
+        
+        <div class="row align-items-center">
+
+            <div class="col-6">
+                <h5 id="valorPeso">PESO (kg): <span id="vp">20</span></h5>
+                <input type="range" class="form-control" id="peso" min="20" max="200" value="20"> <br>
+
+                <h5 id="valorEstatura">ESTATURA (cm): <span id="ve">100</span></h5>
+                <input type="range" class="form-control" id="estatura" min="100" max="220" value="100">
+
+                <h2 class="text-center mt-5 mb-4">IMC: <span id="imc">0</span></h2>
+
+                <button id="reset" class="btn btn-warning form-control">RESET</button>
+            </div>
+
+     
+            <div class="col-6">
+                <table class="table table-bordered text-center text-white" style="background-color: transparent; margin: 0;">
+                    <thead>
+                        <tr>
+                            <th style="background-color: #86f4ec; color: black;">Categoría</th>
+                            <th style="background-color: #86f4ec; color: blacks;">IMC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="background-color: #00b0f0; font-weight: bold;">BAJO PESO</td>
+                            <td style="background-color: #00b0f0; font-weight: bold;">&lt; 18,5</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #92d050; font-weight: bold;">NORMAL</td>
+                            <td style="background-color: #92d050; font-weight: bold;">18,5 a 24,9</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffc000; font-weight: bold;">SOBREPESO</td>
+                            <td style="background-color: #ffc000; font-weight: bold;">25 a 29,9</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ed7d31; font-weight: bold;">OBESIDAD I</td>
+                            <td style="background-color: #ed7d31; font-weight: bold;">30 a 34,9</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #c65911; font-weight: bold;">OBESIDAD II</td>
+                            <td style="background-color: #c65911; font-weight: bold;">35 a 39,9</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #c00000; font-weight: bold;">OBESIDAD III</td>
+                            <td style="background-color: #c00000; font-weight: bold;">40 &lt;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="imc.js"></script>
+</body>
+</html>
